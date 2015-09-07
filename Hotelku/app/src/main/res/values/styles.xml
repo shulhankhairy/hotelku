@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme.
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#4285f4</item>
+    </style>-->
+    <style name="CustomActionBarTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#2E9FE8</item>
+    </style>
+
+    <style name="navbar_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!--<item name="android:background">@drawable/navbar_backgroundselector</item>-->
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+</resources>

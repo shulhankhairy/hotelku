@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clicked_color">#1C307B</color>
+    <color name="main_color">#2E9FE8</color>
+    <color name="white">#FFFFFF</color>
+</resources>

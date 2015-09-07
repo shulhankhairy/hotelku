@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:weightSum="1">
+
+    <!-- Login progress -->
+    <!--<ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_logo2"
+        android:layout_marginTop="30px" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80px">
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <AutoCompleteTextView android:id="@+id/username" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_username"
+                android:inputType="text" android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText android:id="@+id/password" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true" />
+
+            <Button android:id="@+id/tourist_sign_in_button" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="@string/action_sign_in_tourist"
+                android:textStyle="bold"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF" />
+
+            <Button android:id="@+id/owner_sign_in_button" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="@string/action_sign_in_owner"
+                android:textStyle="bold"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Do not have an account?"
+                android:id="@+id/text_dont_have_account"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginTop="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Register Here"
+                android:id="@+id/text_register_here"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
