@@ -58,7 +58,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Do not have an account?"
                 android:id="@+id/text_dont_have_account"
-                android:layout_gravity="center_horizontal|left"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20px" />
 
             <TextView
@@ -67,7 +67,8 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Register Here"
                 android:id="@+id/text_register_here"
-                android:textColor="#FF0000" />
+                android:textColor="#FF0000"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </ScrollView>
 
