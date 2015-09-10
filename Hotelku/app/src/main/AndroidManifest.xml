@@ -41,6 +41,10 @@
             android:name=".TouristNavbarActivity"
             android:label="Home" >
         </activity>
+        <activity
+            android:name=".TouristRegisterSuccess"
+            android:label="Register Success" >
+        </activity>
     </application>
 
 </manifest>
