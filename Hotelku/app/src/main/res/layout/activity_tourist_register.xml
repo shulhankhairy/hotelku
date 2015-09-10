@@ -14,120 +14,206 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/user_picture"
+        android:src="@drawable/ic_user"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:text="Upload your photo"
+        android:id="@+id/upload_profile_pict_button"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/main_color"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:layout_below="@+id/user_picture"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout">
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/register_tourist_name"
+        android:layout_gravity="center_horizontal"
+        android:hint="Your Name"
+        android:maxLines="1"
+        android:layout_alignLeft="@+id/upload_profile_pict_button"
+        android:layout_alignStart="@+id/upload_profile_pict_button"
+        android:layout_below="@+id/upload_profile_pict_button"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:textSize="12dp" />
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/user_picture"
-            android:src="@drawable/ic_user"
-            android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/register_tourist_birthdate"
+        android:hint="Your Birthdate"
+        android:layout_below="@+id/register_tourist_name"
+        android:layout_alignLeft="@+id/register_tourist_name"
+        android:layout_alignStart="@+id/register_tourist_name"
+        android:layout_alignRight="@+id/register_tourist_name"
+        android:layout_alignEnd="@+id/register_tourist_name"
+        android:textSize="12dp" />
 
-        <Button
-            android:layout_width="113dp"
-            android:layout_height="34dp"
-            android:text="Upload"
-            android:id="@+id/upload_profile_pict_button"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/main_color"
-            android:textColor="#FFFFFF"
-            android:textSize="14dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:id="@+id/register_tourist_gender"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/register_tourist_birthdate"
+        android:layout_alignLeft="@+id/register_tourist_birthdate"
+        android:layout_alignStart="@+id/register_tourist_birthdate"
+        android:layout_alignRight="@+id/register_tourist_birthdate"
+        android:layout_alignEnd="@+id/register_tourist_birthdate" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/register_tourist_name"
-            android:layout_gravity="center_horizontal"
-            android:hint="Your Name"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:maxLines="1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_tourist_phone"
+        android:hint="Phone Number"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:layout_below="@+id/register_tourist_gender"
+        android:layout_alignLeft="@+id/register_tourist_gender"
+        android:layout_alignStart="@+id/register_tourist_gender"
+        android:layout_alignRight="@+id/register_tourist_gender"
+        android:layout_alignEnd="@+id/register_tourist_gender"
+        android:textSize="12dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:id="@+id/register_tourist_birthdate"
-            android:hint="Your Birthdate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_tourist_email"
+        android:hint="Your E-Mail"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignLeft="@+id/register_tourist_phone"
+        android:layout_alignStart="@+id/register_tourist_phone"
+        android:layout_alignRight="@+id/register_tourist_phone"
+        android:layout_alignEnd="@+id/register_tourist_phone" />
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:id="@+id/register_tourist_gender"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_tourist_password"
+        android:hint="Password (Min. 8 Character)"
+        android:maxLines="1"
+        android:nestedScrollingEnabled="false"
+        android:textSize="12dp"
+        android:layout_below="@+id/register_tourist_email"
+        android:layout_alignLeft="@+id/register_tourist_email"
+        android:layout_alignStart="@+id/register_tourist_email"
+        android:layout_alignRight="@+id/register_tourist_email"
+        android:layout_alignEnd="@+id/register_tourist_email" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/register_tourist_phone"
-            android:hint="Phone Number"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:maxLines="1"
-            android:inputType="phone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Full Name"
+        android:id="@+id/textView7"
+        android:textSize="14dp"
+        android:layout_alignTop="@+id/register_tourist_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/register_tourist_email"
-            android:hint="Your E-Mail"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:maxLines="1"
-            android:inputType="textEmailAddress" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Birthdate"
+        android:id="@+id/textView6"
+        android:textSize="14dp"
+        android:layout_alignTop="@+id/register_tourist_birthdate"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="5dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/register_tourist_password"
-            android:hint="Password (Min. 8 Character)"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:maxLines="1"
-            android:nestedScrollingEnabled="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gender"
+        android:id="@+id/textView8"
+        android:textSize="14dp"
+        android:layout_alignTop="@+id/register_tourist_gender"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="8dp" />
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Phone Number"
+        android:id="@+id/textView9"
+        android:textSize="14dp"
+        android:layout_below="@+id/register_tourist_gender"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="E-mail"
+        android:id="@+id/textView10"
+        android:textSize="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/register_tourist_phone"
+        android:layout_alignLeft="@+id/textView9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Password"
+        android:id="@+id/textView11"
+        android:textSize="14dp"
+        android:layout_below="@+id/register_tourist_email"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
 
     <Button
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/register_tourist_button"
+        android:id="@+id/button"
         android:background="@color/main_color"
         android:layout_gravity="center_horizontal|left"
         android:textColor="#FFFFFF"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="30dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/register_tourist_password"
+        android:layout_alignEnd="@+id/register_tourist_password"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:text="Cancel"
-        android:id="@+id/register_tourist_button_cancel"
+        android:id="@+id/button2"
         android:background="@color/main_color"
         android:layout_gravity="center_horizontal|left"
         android:textColor="#FFFFFF"
-        android:layout_alignTop="@+id/register_tourist_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="30dp" />
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
 
 </RelativeLayout>
