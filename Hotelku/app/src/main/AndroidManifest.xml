@@ -23,7 +23,15 @@
         </activity>
         <activity
             android:name=".OwnerRegisterActivity"
-            android:label="Register" >
+            android:label="Property Register" >
+        </activity>
+        <activity
+            android:name=".OwnerRegister2Activity"
+            android:label="Property Detail">
+        </activity>
+        <activity
+            android:name=".OwnerRegister3Activity"
+            android:label="Add Room Detail">
         </activity>
         <activity
             android:name=".TouristRegisterActivity"
