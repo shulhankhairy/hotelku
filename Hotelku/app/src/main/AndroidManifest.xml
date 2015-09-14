@@ -34,6 +34,10 @@
             android:label="Add Room Detail">
         </activity>
         <activity
+            android:name=".OwnerRegisterSuccess"
+            android:label="Register Success" >
+        </activity>
+        <activity
             android:name=".TouristRegisterActivity"
             android:label="Register" >
         </activity>
