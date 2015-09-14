@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout
+    android:id="@+id/register_owner_layout_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,12 +11,12 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/register_owner_linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/register_owner_linear_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -24,19 +25,250 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_logo2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="20dp"
+                                android:text="Room Name:"
+                                android:textSize="15sp"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Room Name"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_room_name"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="20dp"
+                                android:text="Room Availability:"
+                                android:textSize="15sp"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Room Availabiity"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_room_availability"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="* fill with numberic only"
+                                android:textSize="13sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
+                    android:gravity="center_horizontal"
                     android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/register_owner_property_upload_image_button"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="34dp"
+                        android:background="@color/main_color"
+                        android:textColor="#FFFFFF"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Upload Image"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/register_owner_property_delete_room_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:background="@color/main_color"
+                        android:textColor="#FFFFFF"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Delete This Room"
+                        android:textSize="14sp"/>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Room Amenities"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:hint="amenity"
+                                android:id="@+id/register_owner_property_amenity_1"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="amenity 4"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_amenity_4"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="amenity 2"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_amenity_2"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="facility 5"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_amenity_5"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="facility 3"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_amenity_3"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="facility 6"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:id="@+id/register_owner_property_amenity_6"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="More Room"
+                    android:id="@+id/register_owner_more_room_button"
+                    android:background="@color/main_color"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 
@@ -44,4 +276,36 @@
 
     </ScrollView>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/register_owner_cancel_button"
+            android:background="@color/main_color"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Next"
+            android:id="@+id/register_owner_next_button"
+            android:background="@color/main_color"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
