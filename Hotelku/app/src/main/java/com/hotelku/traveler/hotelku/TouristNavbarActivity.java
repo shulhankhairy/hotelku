@@ -31,34 +31,34 @@ public class TouristNavbarActivity extends Activity {
     public void onClikButtonMenu(View v)
     {
         RadioButton radioButton;
-        radioButton = (RadioButton) findViewById(R.id.btnHistory);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_history, 0, 0);
-        radioButton = (RadioButton) findViewById(R.id.btnNotif);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_notification, 0, 0);
-        radioButton = (RadioButton) findViewById(R.id.btnOrder);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_list, 0, 0);
-        radioButton = (RadioButton) findViewById(R.id.btnSetting);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_setting, 0, 0);
+        radioButton = (RadioButton) findViewById(R.id.btnHistory2);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
+        radioButton = (RadioButton) findViewById(R.id.btnNotif2);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_notif_passive, 0, 0);
+        radioButton = (RadioButton) findViewById(R.id.btnOrder2);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_request_passive, 0, 0);
+        radioButton = (RadioButton) findViewById(R.id.btnMore2);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_more_passive, 0, 0);
         boolean checked = ((RadioButton) v).isChecked();
-        if(v.getId()==R.id.btnHistory)
+        if(v.getId()==R.id.btnHistory2)
         {
             if(checked)
-                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_notification_clicked, 0, 0);
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);
         }
-        else if(v.getId()==R.id.btnNotif)
+        else if(v.getId()==R.id.btnNotif2)
         {
             if(checked)
-                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_notification_clicked, 0, 0);
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_notif_active, 0, 0);
         }
-        else if(v.getId()==R.id.btnOrder)
+        else if(v.getId()==R.id.btnOrder2)
         {
             if(checked)
-                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_notification_clicked, 0, 0);
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_request_active, 0, 0);
         }
-        else if(v.getId()==R.id.btnSetting)
+        else if(v.getId()==R.id.btnMore2)
         {
             if(checked)
-                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_notification_clicked, 0, 0);
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_more_active, 0, 0);
         }
 
     }

@@ -88,7 +88,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         mTouristSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this,OwnerNavbarActivity.class);
+                Intent i = new Intent(LoginActivity.this,TouristNavbarActivity.class);
                 startActivity(i);
             }
         });
