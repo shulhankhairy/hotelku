@@ -52,31 +52,16 @@
         android:layout_marginRight="20dp"
         android:textSize="12dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/register_tourist_birthdate"
-        android:hint="Your Birthdate"
-        android:layout_below="@+id/register_tourist_name"
-        android:layout_alignLeft="@+id/register_tourist_name"
-        android:layout_alignStart="@+id/register_tourist_name"
-        android:layout_alignRight="@+id/register_tourist_name"
-        android:layout_alignEnd="@+id/register_tourist_name"
-        android:textSize="12dp" />
-
     <Spinner
         android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_height="30dp"
         android:id="@+id/register_tourist_gender"
         android:entries="@array/gender_arrays"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/register_tourist_birthdate"
-        android:layout_alignLeft="@+id/register_tourist_birthdate"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/register_tourist_name"
         android:layout_alignStart="@+id/register_tourist_birthdate"
-        android:layout_alignRight="@+id/register_tourist_birthdate"
-        android:layout_alignEnd="@+id/register_tourist_birthdate" />
+        android:layout_marginRight="20dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -86,11 +71,11 @@
         android:maxLines="1"
         android:inputType="phone"
         android:layout_below="@+id/register_tourist_gender"
-        android:layout_alignLeft="@+id/register_tourist_gender"
-        android:layout_alignStart="@+id/register_tourist_gender"
         android:layout_alignRight="@+id/register_tourist_gender"
         android:layout_alignEnd="@+id/register_tourist_gender"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:layout_alignLeft="@+id/register_tourist_gender"
+        android:layout_alignStart="@+id/register_tourist_gender" />
 
     <EditText
         android:layout_width="match_parent"
@@ -100,11 +85,11 @@
         android:maxLines="1"
         android:inputType="textEmailAddress"
         android:textSize="12dp"
-        android:layout_alignTop="@+id/textView10"
-        android:layout_alignLeft="@+id/register_tourist_phone"
-        android:layout_alignStart="@+id/register_tourist_phone"
+        android:layout_below="@+id/register_tourist_phone"
         android:layout_alignRight="@+id/register_tourist_phone"
-        android:layout_alignEnd="@+id/register_tourist_phone" />
+        android:layout_alignEnd="@+id/register_tourist_phone"
+        android:layout_alignLeft="@+id/register_tourist_phone"
+        android:layout_alignStart="@+id/register_tourist_phone" />
 
     <EditText
         android:layout_width="match_parent"
@@ -117,10 +102,10 @@
         android:nestedScrollingEnabled="false"
         android:textSize="12dp"
         android:layout_below="@+id/register_tourist_email"
-        android:layout_alignLeft="@+id/register_tourist_email"
-        android:layout_alignStart="@+id/register_tourist_email"
         android:layout_alignRight="@+id/register_tourist_email"
-        android:layout_alignEnd="@+id/register_tourist_email" />
+        android:layout_alignEnd="@+id/register_tourist_email"
+        android:layout_alignLeft="@+id/register_tourist_email"
+        android:layout_alignStart="@+id/register_tourist_email" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -140,10 +125,10 @@
         android:text="Birthdate"
         android:id="@+id/textView6"
         android:textSize="14dp"
-        android:layout_alignTop="@+id/register_tourist_birthdate"
         android:layout_alignLeft="@+id/textView7"
         android:layout_alignStart="@+id/textView7"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/register_tourist_name" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -152,10 +137,9 @@
         android:text="Gender"
         android:id="@+id/textView8"
         android:textSize="14dp"
-        android:layout_alignTop="@+id/register_tourist_gender"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/textView6"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_marginTop="8dp" />
+        android:layout_alignStart="@+id/textView6" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -176,10 +160,10 @@
         android:text="E-mail"
         android:id="@+id/textView10"
         android:textSize="14dp"
-        android:layout_marginTop="30dp"
         android:layout_below="@+id/register_tourist_phone"
         android:layout_alignLeft="@+id/textView9"
-        />
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -190,7 +174,8 @@
         android:textSize="14dp"
         android:layout_below="@+id/register_tourist_email"
         android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10" />
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginTop="5dp" />
 
     <Button
         android:layout_width="145dp"
@@ -216,5 +201,29 @@
         android:layout_alignTop="@+id/tourist_register_button"
         android:layout_alignLeft="@+id/textView11"
         android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Your Birthday"
+        android:id="@+id/register_tourist_birthdate"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignLeft="@+id/user_picture"
+        android:layout_alignStart="@+id/user_picture" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="78dp"
+        android:layout_height="23dp"
+        android:text="Select date"
+        android:id="@+id/button"
+        android:layout_below="@+id/register_tourist_name"
+        android:background="@color/main_color"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:layout_alignRight="@+id/register_tourist_name"
+        android:layout_alignEnd="@+id/register_tourist_name" />
 
 </RelativeLayout>
