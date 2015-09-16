@@ -1,4 +1,4 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku.owner.mainmenu;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.hotelku.traveler.hotelku.R;
 
 /**
  * Created by Admin on 9/3/2015.

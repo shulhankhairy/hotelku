@@ -1,4 +1,4 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku.tourist.mainmenu;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.hotelku.traveler.hotelku.R;
 
 /**
  * Created by Admin on 9/3/2015.
@@ -31,6 +33,8 @@ public class TouristNavbarActivity extends Activity {
     public void onClikButtonMenu(View v)
     {
         RadioButton radioButton;
+        radioButton = (RadioButton) findViewById(R.id.btnHome2);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnHistory2);
         radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnNotif2);
@@ -40,7 +44,12 @@ public class TouristNavbarActivity extends Activity {
         radioButton = (RadioButton) findViewById(R.id.btnMore2);
         radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_more_passive, 0, 0);
         boolean checked = ((RadioButton) v).isChecked();
-        if(v.getId()==R.id.btnHistory2)
+        if(v.getId()==R.id.btnHome2)
+        {
+            if(checked)
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);
+        }
+        else if(v.getId()==R.id.btnHistory2)
         {
             if(checked)
                 ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);

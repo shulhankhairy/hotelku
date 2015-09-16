@@ -1,10 +1,12 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku.owner.register;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.hotelku.traveler.hotelku.R;
 
 /**
  * Created by noba on 9/12/2015.

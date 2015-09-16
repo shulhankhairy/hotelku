@@ -1,4 +1,4 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku.tourist.register;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.widget.Toast;
+
+import com.hotelku.traveler.hotelku.R;
 
 /**
  * Created by KHAIRY on 02-Sep-15.

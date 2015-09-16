@@ -1,7 +1,9 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku.owner.register;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.hotelku.traveler.hotelku.R;
 
 /**
  * Created by noba on 9/15/2015.

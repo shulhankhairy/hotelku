@@ -1,11 +1,10 @@
-package com.hotelku.traveler.hotelku;
+package com.hotelku;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
-import android.content.ContentResolver;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
@@ -26,6 +25,10 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.hotelku.owner.mainmenu.OwnerNavbarActivity;
+import com.hotelku.traveler.hotelku.R;
+import com.hotelku.tourist.mainmenu.TouristNavbarActivity;
 
 import java.util.ArrayList;
 import java.util.List;

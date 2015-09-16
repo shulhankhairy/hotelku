@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
         <activity
-            android:name=".LoginActivity"
+            android:name="com.hotelku.LoginActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize|stateVisible">
             <intent-filter>
@@ -22,39 +22,39 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OwnerRegisterActivity"
+            android:name="com.hotelku.owner.register.OwnerRegisterActivity"
             android:label="Property Register" >
         </activity>
         <activity
-            android:name=".OwnerRegister2Activity"
+            android:name="com.hotelku.owner.register.OwnerRegister2Activity"
             android:label="Property Detail">
         </activity>
         <activity
-            android:name=".OwnerRegister3Activity"
+            android:name="com.hotelku.owner.register.OwnerRegister3Activity"
             android:label="Add Room Detail">
         </activity>
         <activity
-            android:name=".OwnerRegisterSuccess"
+            android:name="com.hotelku.owner.register.OwnerRegisterSuccess"
             android:label="Register Success" >
         </activity>
         <activity
-            android:name=".TouristRegisterActivity"
+            android:name="com.hotelku.tourist.register.TouristRegisterActivity"
             android:label="Register" >
         </activity>
         <activity
-            android:name=".RegisterOptionActivity"
+            android:name="com.hotelku.RegisterOptionActivity"
             android:label="Register" >
         </activity>
         <activity
-            android:name=".OwnerNavbarActivity"
+            android:name="com.hotelku.owner.mainmenu.OwnerNavbarActivity"
             android:label="Home" >
         </activity>
         <activity
-            android:name=".TouristNavbarActivity"
+            android:name="com.hotelku.tourist.mainmenu.TouristNavbarActivity"
             android:label="Home" >
         </activity>
         <activity
-            android:name=".TouristRegisterSuccess"
+            android:name="com.hotelku.tourist.register.TouristRegisterSuccess"
             android:label="Register Success" >
         </activity>
     </application>
