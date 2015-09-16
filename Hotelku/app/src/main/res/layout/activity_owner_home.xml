@@ -16,31 +16,27 @@
             android:onClick="onClikButtonMenu"
             android:id="@+id/btnHistory"
             style="@style/navbar_button"
-            android:drawableTop="@drawable/ic_history"
-            android:text="History"
+            android:drawableTop="@mipmap/ic_history_passive"
             android:layout_marginTop="5dp" />
         <RadioButton
             android:onClick="onClikButtonMenu"
             android:id="@+id/btnNotif"
             style="@style/navbar_button"
-            android:drawableTop="@drawable/ic_notification"
-            android:text="Notification"
+            android:drawableTop="@mipmap/ic_notif_passive"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp" />
         <RadioButton
             android:onClick="onClikButtonMenu"
             android:id="@+id/btnOrder"
             style="@style/navbar_button"
-            android:drawableTop="@drawable/ic_list"
-            android:text="Order"
+            android:drawableTop="@mipmap/ic_hg_passive"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp" />
         <RadioButton
             android:onClick="onClikButtonMenu"
             android:id="@+id/btnSetting"
             style="@style/navbar_button"
-            android:drawableTop="@drawable/ic_setting"
-            android:text="Settings"
+            android:drawableTop="@mipmap/ic_more_passive"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp" />
     </RadioGroup>

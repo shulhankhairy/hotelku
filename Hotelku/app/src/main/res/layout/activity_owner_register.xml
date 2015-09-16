@@ -185,7 +185,7 @@
                         android:layout_gravity="center_horizontal|right"
                         android:textSize="14sp"
                         android:textColor="#FFFFFF"
-                        android:text="!"/>
+                        android:text=".."/>
 
                 </LinearLayout>
 

@@ -40,7 +40,7 @@ public class OwnerRegisterActivity extends Activity {
         findPositionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(OwnerRegisterActivity.this, "Find", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OwnerRegisterActivity.this, "tombol buat cari posisi hotel\npake gmap", Toast.LENGTH_SHORT).show();
             }
         });
     }
