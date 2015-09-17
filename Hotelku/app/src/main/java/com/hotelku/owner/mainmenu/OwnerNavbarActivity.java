@@ -29,7 +29,7 @@ public class OwnerNavbarActivity  extends Activity {
         ft.commit();
         RadioButton radioButton;
         radioButton = (RadioButton) findViewById(R.id.btnHome);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_home_active, 0, 0);
 
     }
 

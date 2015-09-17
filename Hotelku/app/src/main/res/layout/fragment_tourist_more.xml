@@ -1,10 +1,91 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hotelku.tourist.mainmenu.TouristMoreFragment">
+    tools:context="com.hotelku.tourist.mainmenu.TouristMoreFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_edit_button"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Edit Profile" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_settings"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="App Settings" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_aboutus"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="About Us" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_termscond"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="Terms and Conditions" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_privacy"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="Privacy and Cancellation Policy" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_clearhistory"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="Clear History" />
+
+            <Button
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tourist_more_logout"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/main_color"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

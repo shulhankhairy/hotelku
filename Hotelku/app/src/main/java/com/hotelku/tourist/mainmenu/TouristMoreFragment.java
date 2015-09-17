@@ -10,15 +10,6 @@ import android.view.ViewGroup;
 
 import com.hotelku.traveler.hotelku.R;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link TouristMoreFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link TouristMoreFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class TouristMoreFragment extends Fragment {
 
     public TouristMoreFragment() {
@@ -28,10 +19,7 @@ public class TouristMoreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_tourist_more, container, false);
-
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return rootView;
     }
-
 }

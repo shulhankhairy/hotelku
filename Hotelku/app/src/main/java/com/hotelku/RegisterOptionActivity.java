@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hotelku.owner.register.OwnerRegisterActivity;
+import com.hotelku.tourist.mainmenu.TouristNavbarActivity;
 import com.hotelku.traveler.hotelku.R;
 import com.hotelku.tourist.register.TouristRegisterActivity;
 
@@ -33,7 +34,7 @@ public class RegisterOptionActivity extends Activity {
         touristButtonOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j = new Intent(RegisterOptionActivity.this, TouristRegisterActivity.class);
+                Intent j = new Intent(RegisterOptionActivity.this, TouristNavbarActivity.class);
                 startActivity(j);
             }
         });

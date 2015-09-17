@@ -19,9 +19,7 @@ public class TouristHomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_tourist_home, container, false);
-
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return rootView;
     }
 }

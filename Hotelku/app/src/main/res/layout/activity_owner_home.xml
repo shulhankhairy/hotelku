@@ -24,7 +24,7 @@
             android:onClick="onClikButtonMenu"
             android:id="@+id/btnHome"
             style="@style/navbar_button"
-            android:drawableTop="@mipmap/ic_history_passive"
+            android:drawableTop="@mipmap/ic_home_passive"
             android:layout_marginTop="5dp" />
         <RadioButton
             android:onClick="onClikButtonMenu"

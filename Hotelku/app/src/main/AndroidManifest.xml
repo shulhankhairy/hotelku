@@ -15,9 +15,10 @@
         <activity
             android:name="com.hotelku.LoginActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize|stateVisible">
+            android:windowSoftInputMode="adjustResize|stateVisible" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -27,11 +28,11 @@
         </activity>
         <activity
             android:name="com.hotelku.owner.register.OwnerRegister2Activity"
-            android:label="Property Detail">
+            android:label="Property Detail" >
         </activity>
         <activity
             android:name="com.hotelku.owner.register.OwnerRegister3Activity"
-            android:label="Add Room Detail">
+            android:label="Add Room Detail" >
         </activity>
         <activity
             android:name="com.hotelku.owner.register.OwnerRegisterSuccess"
@@ -56,6 +57,34 @@
         <activity
             android:name="com.hotelku.tourist.register.TouristRegisterSuccess"
             android:label="Register Success" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristInfoDestActivity"
+            android:label="@string/title_activity_tourist_info_dest" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristBaliActivity"
+            android:label="@string/title_activity_tourist_bali" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristHistoryTab1Fragment"
+            android:label="@string/title_activity_tourist_history_tab1" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristHistoryTab2Fragment"
+            android:label="@string/title_activity_tourist_history_tab2" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristEditProfileActivity"
+            android:label="@string/title_activity_tourist_edit_profile" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristTermsCondActivity"
+            android:label="@string/title_activity_tourist_terms_cond" >
         </activity>
     </application>
 
