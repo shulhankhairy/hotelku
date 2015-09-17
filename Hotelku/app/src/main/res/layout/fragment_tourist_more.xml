@@ -18,7 +18,7 @@
             <Button
                 android:layout_width="273dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/tourist_more_edit_button"
+                android:id="@+id/tourist_more_edit"
                 android:background="@color/main_color"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="20dp"

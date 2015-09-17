@@ -8,11 +8,13 @@ import android.view.MenuItem;
 
 import com.hotelku.traveler.hotelku.R;
 
-public class TouristTermsCondActivity extends Activity {
+public class TouristCancelActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tourist_terms_cond);
+        setContentView(R.layout.activity_tourist_cancel);
+
+
     }
 }

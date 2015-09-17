@@ -34,4 +34,7 @@
     <string name="title_activity_history">HistoryActivity</string>
     <string name="title_activity_tourist_edit_profile">TouristEditProfileActivity</string>
     <string name="title_activity_tourist_terms_cond">TouristTermsCondActivity</string>
+    <string name="title_activity_tourist_policy">TouristPolicyActivity</string>
+    <string name="title_activity_tourist_booking">TouristBookingActivity</string>
+    <string name="title_activity_tourist_cancel">TouristCancelActivity</string>
 </resources>
