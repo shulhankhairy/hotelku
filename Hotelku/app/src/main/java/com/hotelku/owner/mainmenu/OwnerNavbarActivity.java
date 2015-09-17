@@ -27,12 +27,17 @@ public class OwnerNavbarActivity  extends Activity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.add(R.id.home_owner_fragment, new OwnerHomeFragment());
         ft.commit();
+        RadioButton radioButton;
+        radioButton = (RadioButton) findViewById(R.id.btnHome);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);
 
     }
 
     public void onClikButtonMenu(View v)
     {
         RadioButton radioButton;
+        radioButton = (RadioButton) findViewById(R.id.btnHome);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnHistory);
         radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnNotif);
@@ -49,6 +54,16 @@ public class OwnerNavbarActivity  extends Activity {
                 ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_active, 0, 0);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.home_owner_fragment, new OwnerHistoryFragment());
+                ft.commit();
+            }
+        }
+        else if(v.getId()==R.id.btnHome)
+        {
+            if(checked)
+            {
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_notif_active, 0, 0);
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.home_owner_fragment, new OwnerHomeFragment());
                 ft.commit();
             }
         }
