@@ -39,6 +39,10 @@
             android:label="Register Success" >
         </activity>
         <activity
+            android:name="com.hotelku.owner.OwnerBookingVoucherDetailActivity"
+            android:label="Booking Voucher Detail" >
+        </activity>
+        <activity
             android:name="com.hotelku.tourist.register.TouristRegisterActivity"
             android:label="Register" >
         </activity>

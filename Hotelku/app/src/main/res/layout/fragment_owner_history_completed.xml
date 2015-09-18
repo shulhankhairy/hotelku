@@ -14,6 +14,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/coba"
                 android:background="@color/button_material_dark"
                 android:orientation="vertical"
                 android:paddingLeft="8dp"
