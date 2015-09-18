@@ -37,7 +37,7 @@ public class OwnerNavbarActivity  extends Activity {
     {
         RadioButton radioButton;
         radioButton = (RadioButton) findViewById(R.id.btnHome);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_home_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnHistory);
         radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnNotif);
@@ -61,7 +61,7 @@ public class OwnerNavbarActivity  extends Activity {
         {
             if(checked)
             {
-                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_notif_active, 0, 0);
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_home_active, 0, 0);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.home_owner_fragment, new OwnerHomeFragment());
                 ft.commit();

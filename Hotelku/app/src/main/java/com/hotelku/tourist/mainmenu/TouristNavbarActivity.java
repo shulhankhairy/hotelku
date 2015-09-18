@@ -38,7 +38,7 @@ public class TouristNavbarActivity extends Activity {
     {
         RadioButton radioButton;
         radioButton = (RadioButton) findViewById(R.id.btnHome2);
-        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
+        radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_home_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnHistory2);
         radioButton.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_history_passive, 0, 0);
         radioButton = (RadioButton) findViewById(R.id.btnNotif2);
@@ -63,6 +63,15 @@ public class TouristNavbarActivity extends Activity {
                 ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_notif_active, 0, 0);
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.tourist_home_fragment, new TouristNotifFragment());
+                ft.commit();
+            }
+        }
+        else if(v.getId()==R.id.btnHome2)
+        {
+            if(checked){
+                ((RadioButton) v).setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.ic_home_active, 0, 0);
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.tourist_home_fragment, new TouristHomeFragment());
                 ft.commit();
             }
         }

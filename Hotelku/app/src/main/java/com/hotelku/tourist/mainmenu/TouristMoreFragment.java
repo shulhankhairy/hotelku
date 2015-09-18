@@ -41,7 +41,7 @@ public class TouristMoreFragment extends Fragment {
             }
         });
 
-        Button privacyBtn = (Button)rootView.findViewById(R.id.tourist_more_privacy);
+        Button privacyBtn = (Button)rootView.findViewById(R.id.tourist_more_policy);
         privacyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
