@@ -75,10 +75,6 @@
             android:label="@string/title_activity_tourist_history_tab2" >
         </activity>
         <activity
-            android:name="com.hotelku.tourist.mainmenu.HistoryActivity"
-            android:label="@string/title_activity_history" >
-        </activity>
-        <activity
             android:name="com.hotelku.tourist.mainmenu.TouristEditProfileActivity"
             android:label="@string/title_activity_tourist_edit_profile" >
         </activity>

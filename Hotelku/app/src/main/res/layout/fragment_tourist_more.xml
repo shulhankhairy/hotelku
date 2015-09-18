@@ -58,7 +58,7 @@
             <Button
                 android:layout_width="273dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/tourist_more_privacy"
+                android:id="@+id/tourist_more_policy"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/main_color"
                 android:textColor="#FFFFFF"
