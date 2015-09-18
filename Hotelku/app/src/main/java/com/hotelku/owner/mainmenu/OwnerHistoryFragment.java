@@ -29,7 +29,19 @@ public class OwnerHistoryFragment extends Fragment {
 
         fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.home_owner_history_fragment, new OwnerHistoryOngoingFragment(), "ongoing");
+
+        OwnerHistoryOngoingFragment fragment = (OwnerHistoryOngoingFragment) getFragmentManager().findFragmentByTag("ongoing");
+        if(fragment==null)
+        {
+            OwnerHistoryCompletedFragment fragment1 = (OwnerHistoryCompletedFragment)getFragmentManager().findFragmentByTag("completed");
+            if(fragment1==null)
+                ft.add(R.id.home_owner_history_fragment, new OwnerHistoryOngoingFragment(), "ongoing");
+            else
+                ft.replace(R.id.home_owner_history_fragment, new OwnerHistoryOngoingFragment(), "ongoing");
+        }
+        else
+            ft.replace(R.id.home_owner_history_fragment, new OwnerHistoryOngoingFragment(), "ongoing");
+
         ft.commit();
 
         ongoing = (LinearLayout)view.findViewById(R.id.home_owner_history_ongoing);
@@ -68,7 +80,10 @@ public class OwnerHistoryFragment extends Fragment {
                         FragmentTransaction ft = fm.beginTransaction();
                         ft.replace(R.id.home_owner_history_fragment, new OwnerHistoryCompletedFragment(), "completed");
                         ft.commit();
+                        Toast.makeText(getActivity().getBaseContext(), "ADDD", Toast.LENGTH_SHORT).show();
                     }
+                    else
+                        Toast.makeText(getActivity().getBaseContext(), "NULL", Toast.LENGTH_SHORT).show();
                 }
             }
         });
