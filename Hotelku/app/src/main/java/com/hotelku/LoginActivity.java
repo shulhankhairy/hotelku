@@ -27,6 +27,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.hotelku.owner.mainmenu.OwnerNavbarActivity;
+import com.hotelku.tourist.mainmenu.TouristNavbarActivity;
 import com.hotelku.traveler.hotelku.R;
 
 import java.util.ArrayList;
@@ -90,7 +91,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         mTouristSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this,TouristHomeActivity.class);
+                Intent i = new Intent(LoginActivity.this,TouristNavbarActivity.class);
                 startActivity(i);
             }
         });

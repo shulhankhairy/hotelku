@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -28,13 +25,13 @@
                     android:layout_width="wrap_content"
                     android:textSize="13sp"
                     android:layout_height="wrap_content"
-                    android:text="Mr. Mojo | 125.555 room/night."/>
+                    android:text="Mr. Callaghum."/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
-                    android:text="Date 12-May-15 | 2 person | 1 room | 7 nights."/>
+                    android:text="Click for detail."/>
 
             </LinearLayout>
 
@@ -51,42 +48,18 @@
                     android:layout_width="wrap_content"
                     android:textSize="13sp"
                     android:layout_height="wrap_content"
-                    android:text="Mr. Rocky | 155.5555 room/night."/>
+                    android:text="Ms. Smitthy"/>
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
-                    android:text="Date 15-Agt-15 | 7 person | 3 rooms |2 nights."/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="6dp"
-                android:background="@color/button_material_dark"
-                android:orientation="vertical"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="13sp"
-                    android:layout_height="wrap_content"
-                    android:text="Ms. Universe | 389.555 room/night."/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="12sp"
-                    android:layout_height="wrap_content"
-                    android:text="Date 31-dec-15 | 2 person | 1 room | 2 nights."/>
+                    android:text="Click for detail."/>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
 </LinearLayout>

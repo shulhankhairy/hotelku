@@ -11,6 +11,17 @@ import android.view.ViewGroup;
 
 import com.hotelku.traveler.hotelku.R;
 
+public class TouristHistoryFragment extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_tourist_history, container, false);
+        return view;
+    }
+}
+/*
 public class TouristHistoryFragment extends FragmentActivity {
 
     public TouristHistoryFragment() {
@@ -34,4 +45,4 @@ public class TouristHistoryFragment extends FragmentActivity {
         tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("Completed", null),
                 TouristHistoryTab2Fragment.class, null);
     }
-}
+}*/
