@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -18,62 +17,42 @@
             android:layout_margin="16dp">
 
             <Button
-                android:id="@+id/owner_more_edit_property_detail"
+                android:id="@+id/owner_more_term_cond_offer"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/main_color"
-                android:text="Edit Property Detail"
+                android:text="How to make offer"
                 android:textSize="14sp"/>
 
             <Button
-                android:id="@+id/owner_more_room_detail"
+                android:id="@+id/owner_more_term_cond_edit_property"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/main_color"
-                android:text="Add or Edit Room/House Detail"
+                android:text="How to edit property detail"
                 android:textSize="14sp"/>
 
             <Button
-                android:id="@+id/owner_more_change_password"
+                android:id="@+id/owner_more_term_cond_edit_room"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/main_color"
-                android:text="Change Password"
+                android:text="How to edit room/house detail"
                 android:textSize="14sp"/>
 
             <Button
-                android:id="@+id/owner_more_term_and_condition"
+                android:id="@+id/owner_more_term_cond_confused"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/main_color"
-                android:text="Term and Condition"
-                android:textSize="14sp"/>
-
-            <Button
-                android:id="@+id/owner_more_about_us"
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@color/main_color"
-                android:text="About Us"
-                android:textSize="14sp"/>
-
-            <Button
-                android:id="@+id/owner_more_logout"
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:background="@color/main_color"
-                android:text="Log Out"
+                android:text="How if I still confused"
                 android:textSize="14sp"/>
 
         </LinearLayout>

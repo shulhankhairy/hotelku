@@ -43,6 +43,22 @@
             android:label="Booking Voucher Detail" >
         </activity>
         <activity
+            android:name="com.hotelku.owner.OwnerCancelBookingActivity"
+            android:label="Cancel Booking" >
+        </activity>
+        <activity
+            android:name="com.hotelku.owner.mainmenu.OwnerMoreTermAndConditionActivity"
+            android:label="Guide" >
+        </activity>
+        <activity
+            android:name="com.hotelku.owner.mainmenu.OwnerHuntingGroundActivity"
+            android:label="Guest Detail" >
+        </activity>
+        <activity
+            android:name="com.hotelku.owner.OwnerOfferActivity"
+            android:label="Offer" >
+        </activity>
+        <activity
             android:name="com.hotelku.tourist.register.TouristRegisterActivity"
             android:label="Register" >
         </activity>

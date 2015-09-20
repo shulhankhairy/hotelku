@@ -80,10 +80,7 @@ public class OwnerHistoryFragment extends Fragment {
                         FragmentTransaction ft = fm.beginTransaction();
                         ft.replace(R.id.home_owner_history_fragment, new OwnerHistoryCompletedFragment(), "completed");
                         ft.commit();
-                        Toast.makeText(getActivity().getBaseContext(), "ADDD", Toast.LENGTH_SHORT).show();
                     }
-                    else
-                        Toast.makeText(getActivity().getBaseContext(), "NULL", Toast.LENGTH_SHORT).show();
                 }
             }
         });

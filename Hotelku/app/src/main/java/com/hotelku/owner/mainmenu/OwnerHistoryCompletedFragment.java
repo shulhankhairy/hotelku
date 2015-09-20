@@ -28,10 +28,8 @@ public class OwnerHistoryCompletedFragment extends Fragment {
         i.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.home_owner_fragment, new OwnerHomeFragment());
-                ft.commit();
+                Intent i = new Intent(getActivity(), OwnerBookingVoucherDetailActivity.class);
+                startActivity(i);
             }
         });
         return view;
