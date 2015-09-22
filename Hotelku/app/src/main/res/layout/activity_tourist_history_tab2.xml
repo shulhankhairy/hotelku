@@ -15,13 +15,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout8">
+        android:id="@+id/tourist_detail_history_list">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Legian Town"
+            android:text="Solorun Singapore"
             android:id="@+id/textView36"
             android:layout_marginLeft="10dp" />
 
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Completed"
+            android:text="Click to see detail"
             android:id="@+id/textView37"
             android:layout_marginLeft="10dp" />
     </LinearLayout>
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:background="#b5b5b5"
         android:baselineAligned="false"
-        android:layout_below="@+id/linearLayout8"
+        android:layout_below="@+id/tourist_detail_history_list"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp">
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Rent Request"
+            android:text="Paragon Surabaya"
             android:id="@+id/textView38"
             android:layout_marginLeft="10dp" />
 

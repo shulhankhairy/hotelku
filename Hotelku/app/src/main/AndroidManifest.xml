@@ -80,39 +80,43 @@
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristInfoDestActivity"
-            android:label="@string/title_activity_tourist_info_dest" >
+            android:label="Detail Information" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristBaliActivity"
-            android:label="@string/title_activity_tourist_bali" >
+            android:label="Bali" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristHistoryTab1Fragment"
-            android:label="@string/title_activity_tourist_history_tab1" >
+            android:label="History" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristHistoryTab2Fragment"
-            android:label="@string/title_activity_tourist_history_tab2" >
+            android:label="History" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristEditProfileActivity"
-            android:label="@string/title_activity_tourist_edit_profile" >
+            android:label="Edit Profile" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristTermsCondActivity"
-            android:label="@string/title_activity_tourist_terms_cond" >
+            android:label="Terms and Conditions" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristPolicyActivity"
-            android:label="@string/title_activity_tourist_policy" >
+            android:label="Privacy Policy" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristBookingActivity"
-            android:label="@string/title_activity_tourist_booking" >
+            android:label="Book" >
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristCancelActivity"
-            android:label="@string/title_activity_tourist_cancel" >
+            android:label="Cancel Book" >
+        </activity>
+        <activity
+            android:name="com.hotelku.tourist.mainmenu.TouristNotifDetailActivity"
+            android:label="@string/title_activity_tourist_notif_detail" >
         </activity>
     </application>
 

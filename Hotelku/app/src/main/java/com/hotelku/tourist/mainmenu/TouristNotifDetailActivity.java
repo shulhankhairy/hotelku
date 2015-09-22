@@ -8,11 +8,11 @@ import android.view.MenuItem;
 
 import com.hotelku.traveler.hotelku.R;
 
-public class TouristPolicyActivity extends Activity {
+public class TouristNotifDetailActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tourist_policy);
+        setContentView(R.layout.activity_tourist_notif_detail);
     }
 }

@@ -15,7 +15,7 @@
 
             <LinearLayout
                 android:id="@+id/coba"
-                android:background="@color/button_material_dark"
+                android:background="#b5b5b5"
                 android:orientation="vertical"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -38,7 +38,7 @@
 
             <LinearLayout
                 android:layout_marginTop="6dp"
-                android:background="@color/button_material_dark"
+                android:background="#b5b5b5"
                 android:orientation="vertical"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"

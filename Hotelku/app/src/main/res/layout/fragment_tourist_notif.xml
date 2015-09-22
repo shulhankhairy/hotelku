@@ -24,7 +24,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="#b5b5b5"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:id="@+id/tourist_notif_detail_offer">
 
                 <TextView
                     android:layout_width="wrap_content"

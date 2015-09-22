@@ -37,4 +37,5 @@
     <string name="title_activity_tourist_policy">TouristPolicyActivity</string>
     <string name="title_activity_tourist_booking">TouristBookingActivity</string>
     <string name="title_activity_tourist_cancel">TouristCancelActivity</string>
+    <string name="title_activity_tourist_notif_detail">TouristNotifDetailActivity</string>
 </resources>
