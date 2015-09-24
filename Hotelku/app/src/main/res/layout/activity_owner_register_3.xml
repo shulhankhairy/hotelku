@@ -166,7 +166,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
@@ -174,19 +174,19 @@
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:hint="amenity"
-                                android:id="@+id/register_owner_property_amenity_1"/>
+                                android:text="TV"
+                                android:id="@+id/register_3_owner_property_tv" />
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:hint="amenity 4"
                                 android:inputType="textPersonName"
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:id="@+id/register_owner_property_amenity_4"/>
+                                android:text="TV Cable"
+                                android:id="@+id/register_3_owner_property_tv_cable" />
 
                         </LinearLayout>
 
@@ -195,27 +195,27 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:hint="amenity 2"
                                 android:inputType="textPersonName"
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:id="@+id/register_owner_property_amenity_2"/>
+                                android:text="Telephone"
+                                android:id="@+id/register_3_owner_property_telephone" />
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:hint="amenity 5"
                                 android:inputType="textPersonName"
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:id="@+id/register_owner_property_amenity_5"/>
+                                android:text="Water Heater"
+                                android:id="@+id/register_3_owner_property_water_heater" />
 
                         </LinearLayout>
 
@@ -224,29 +224,59 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:hint="amenity 3"
                                 android:inputType="textPersonName"
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:id="@+id/register_owner_property_amenity_3"/>
+                                android:text="Minibar"
+                                android:id="@+id/register_3_owner_property_minibar" />
 
-                            <EditText
+                            <CheckBox
                                 android:layout_width="0dp"
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
-                                android:hint="amenity 6"
                                 android:inputType="textPersonName"
                                 android:ems="10"
                                 android:maxLines="1"
                                 android:textSize="12sp"
-                                android:id="@+id/register_owner_property_amenity_6"/>
+                                android:text="Bath Peripheral"
+                                android:id="@+id/register_3_owner_property_bath_peripheral" />
 
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:text="Bath Room"
+                                android:id="@+id/register_3_owner_property_bath_room" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:maxLines="1"
+                                android:textSize="12sp"
+                                android:text="Hairdryer"
+                                android:id="@+id/register_3_owner_property_hairdryer" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
                 </LinearLayout>
 

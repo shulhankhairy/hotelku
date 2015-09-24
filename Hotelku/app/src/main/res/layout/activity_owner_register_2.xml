@@ -386,7 +386,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -394,19 +394,19 @@
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:hint="facility 1"
-                        android:id="@+id/register_owner_property_facility_1"/>
+                        android:text="Kitchen"
+                        android:id="@+id/register_owner_property_kitchen" />
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:hint="facility 4"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:id="@+id/register_owner_property_facility_4"/>
+                        android:text="Restauran"
+                        android:id="@+id/register_owner_property_restauran" />
 
                 </LinearLayout>
 
@@ -415,27 +415,27 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:hint="facility 2"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:id="@+id/register_owner_property_facility_2"/>
+                        android:text="Bar/Lounge"
+                        android:id="@+id/register_owner_property_bar" />
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:hint="facility 5"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:id="@+id/register_owner_property_facility_5"/>
+                        android:text="TV"
+                        android:id="@+id/register_owner_property_tv" />
 
                 </LinearLayout>
 
@@ -444,46 +444,288 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:hint="facility 3"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:id="@+id/register_owner_property_facility_3"/>
+                        android:text="TV Cable"
+                        android:id="@+id/register_owner_property_tv_cable" />
 
-                    <EditText
+                    <CheckBox
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:hint="facility 6"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:maxLines="1"
                         android:textSize="12sp"
-                        android:id="@+id/register_owner_property_facility_6"/>
+                        android:text="Internet Cable"
+                        android:id="@+id/register_owner_property_internet_cable" />
 
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="* Example : Wifi, Swimming pool, etc"
-                        android:textSize="13sp"/>
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Wireless Internet"
+                        android:id="@+id/register_owner_property_wireless_internet" />
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="* One field, one facility"
-                        android:textSize="13sp"/>
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Air Conditioning"
+                        android:id="@+id/register_owner_property_air_conditioing" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Laundry"
+                        android:id="@+id/register_owner_property_laundry" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Dry Cleaning"
+                        android:id="@+id/register_owner_property_dry_cleaning" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Parking Lots"
+                        android:id="@+id/register_owner_property_parking_lots" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Bike Rent"
+                        android:id="@+id/register_owner_property_bike_rent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Wheelchair Accessible"
+                        android:id="@+id/register_owner_property_wheelchair_accessible" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Elevator in Building"
+                        android:id="@+id/register_owner_property_elevator_in_building" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Indoor Fire Place"
+                        android:id="@+id/register_owner_property_indoor_fire_place" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Suitable for Event"
+                        android:id="@+id/register_owner_property_suitable_for_event" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Kids Park"
+                        android:id="@+id/register_owner_property_kids_park" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Telephone"
+                        android:id="@+id/register_owner_property_telephone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Swimming Pool"
+                        android:id="@+id/register_owner_property_swimming_pool" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="8 Pool"
+                        android:id="@+id/register_owner_property_8_pool" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Hot Tub"
+                        android:id="@+id/register_owner_property_hot_tub" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Gym"
+                        android:id="@+id/register_owner_property_gym" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Pets Allowed"
+                        android:id="@+id/register_owner_property_pets_allowed" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:text="Smoking allowed"
+                        android:id="@+id/register_owner_property_smoking_allowed" />
 
                 </LinearLayout>
 
