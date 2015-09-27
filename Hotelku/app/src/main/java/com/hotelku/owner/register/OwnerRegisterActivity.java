@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.hotelku.service.LocationTracker;
 import com.hotelku.traveler.hotelku.R;
 
 /**
@@ -19,6 +20,8 @@ public class OwnerRegisterActivity extends Activity {
 
     EditText propertyName, address, city, longitude, latitude, phoneNumber, email, password, rePassword;
     SharedPreferences sharedPreferences;
+
+    LocationTracker locationTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,16 @@ public class OwnerRegisterActivity extends Activity {
     public void findPosition(View v)
     {
         Toast.makeText(OwnerRegisterActivity.this, "tombol buat cari posisi hotel\npake gmap", Toast.LENGTH_SHORT).show();
+        locationTracker = new LocationTracker(OwnerRegisterActivity.this);
+        if(locationTracker.canGetLocation())
+        {
+            longitude.setText(""+locationTracker.getLongitude());
+            latitude.setText(""+locationTracker.getLatitude());
+        }
+        else
+        {
+            locationTracker.showSettingsAlert();
+        }
     }
 
     @Override
