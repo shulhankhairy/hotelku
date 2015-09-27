@@ -175,6 +175,7 @@
                         android:textSize="14sp"/>
 
                     <Button
+                        android:onClick="findPosition"
                         android:id="@+id/button_register_owner_find_position"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -334,7 +335,6 @@
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Password"
                     android:textSize="14sp"/>
 
                 <EditText
@@ -366,6 +366,7 @@
                     android:layout_width="145dp"
                     android:layout_height="wrap_content"
                     android:text="Cancel"
+                    android:onClick="cancelButton"
                     android:id="@+id/button_register_owner_cancel"
                     android:background="@color/main_color"
                     android:layout_marginRight="5dp"
@@ -377,6 +378,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Next"
+                    android:onClick="nextButton"
                     android:id="@+id/button_register_owner_next"
                     android:background="@color/main_color"
                     android:textColor="#FFFFFF"
