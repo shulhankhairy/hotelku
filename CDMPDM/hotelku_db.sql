@@ -49,7 +49,7 @@ drop table if exists TURIS;
 /*==============================================================*/
 create table DESTINASI_TEMPAT_WISATA
 (
-   DEST_WISATA_ID       int not null,
+   DEST_WISATA_ID       int not null auto_increment,
    JENIS_WISATA_ID      int,
    DEST_ID              int,
    DEST_WISATA_NAMA     varchar(20),

@@ -118,7 +118,7 @@
         </activity>
         <activity
             android:name="com.hotelku.tourist.mainmenu.TouristNotifDetailActivity"
-            android:label="@string/title_activity_tourist_notif_detail" >
+            android:label="Notification" >
         </activity>
     </application>
 
