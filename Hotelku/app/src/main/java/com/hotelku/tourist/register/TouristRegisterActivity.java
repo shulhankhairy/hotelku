@@ -15,11 +15,23 @@ import com.hotelku.traveler.hotelku.R;
  */
 public class TouristRegisterActivity extends Activity {
 
+    Button touristRegisterProfPicBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourist_register);
+
+        touristRegisterProfPicBtn = (Button) findViewById(R.id.upload_profile_pict_button);
+        touristRegisterProfPicBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setType("image/*");
+                i.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(i, "Select Picture"), 1);
+            }
+        });
 
         TextView touristBirthDateText = (TextView) findViewById(R.id.register_tourist_birthdate);
         Button selectBirthDateBtn = (Button) findViewById(R.id.register_tourist_birthdate_button);
