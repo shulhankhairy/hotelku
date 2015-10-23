@@ -41,16 +41,16 @@ public class RegisterOptionActivity extends Activity {
         touristButtonOption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j = new Intent(RegisterOptionActivity.this, TouristNavbarActivity.class);
+                Intent j = new Intent(RegisterOptionActivity.this, TouristRegisterActivity.class);
                 startActivity(j);
             }
         });
     }
 
-    @Override
+    /*@Override
     protected void onResume() {
         super.onResume();
         String data = pref.getString("coba", "gagal");
         Toast.makeText(RegisterOptionActivity.this, data, Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }

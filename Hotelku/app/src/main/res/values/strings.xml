@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hotelku</string>
+    <string name="app_name">SMUNC</string>
     <string name="title_activity_main_menu">MainMenu</string>
 
     <string name="title_section1">Section 1</string>
@@ -20,21 +20,21 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_tourist_home">TouristHomeActivity</string>
+    <string name="title_activity_tourist_home">Home</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_tourist_history">TouristHistoryActivity</string>
-    <string name="title_activity_tourist_notif">TouristNotifActivity</string>
-    <string name="title_activity_tourist_request">TouristRequestActivity</string>
-    <string name="title_activity_tourist_more">TouristMoreActivity</string>
-    <string name="title_activity_tourist_info_dest">TouristInfoDestActivity</string>
-    <string name="title_activity_tourist_bali">TouristBaliActivity</string>
+    <string name="title_activity_tourist_history">History</string>
+    <string name="title_activity_tourist_notif">Notification</string>
+    <string name="title_activity_tourist_request">Request</string>
+    <string name="title_activity_tourist_more">More</string>
+    <string name="title_activity_tourist_info_dest">Destination Info</string>
+    <string name="title_activity_tourist_bali">Bali</string>
     <string name="title_activity_tourist_history_tab1">TouristHistoryTab1Activity</string>
     <string name="title_activity_tourist_history_tab2">TouristHistoryTab2Activity</string>
-    <string name="title_activity_history">HistoryActivity</string>
-    <string name="title_activity_tourist_edit_profile">TouristEditProfileActivity</string>
-    <string name="title_activity_tourist_terms_cond">TouristTermsCondActivity</string>
-    <string name="title_activity_tourist_policy">TouristPolicyActivity</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_tourist_edit_profile">Edit Profile</string>
+    <string name="title_activity_tourist_terms_cond">Terms and Condition</string>
+    <string name="title_activity_tourist_policy">Privacy Policy</string>
     <string name="title_activity_tourist_booking">TouristBookingActivity</string>
     <string name="title_activity_tourist_cancel">TouristCancelActivity</string>
     <string name="title_activity_tourist_notif_detail">TouristNotifDetailActivity</string>
