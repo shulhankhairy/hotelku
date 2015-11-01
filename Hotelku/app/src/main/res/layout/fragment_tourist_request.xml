@@ -8,8 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/radioGroup3">
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -26,7 +25,8 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Destination"
                 android:id="@+id/textView68"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_weight="5" />
 
             <EditText
                 android:layout_width="230dp"
@@ -35,7 +35,8 @@
                 android:hint="Your destination"
                 android:textSize="14dp"
                 android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:layout_weight="0.7" />
 
         </LinearLayout>
         <LinearLayout
@@ -62,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="13dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
@@ -72,17 +73,18 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Name"
                 android:id="@+id/textView70"
-                android:layout_weight="5"
-                android:layout_marginTop="5dp" />
+                android:layout_weight="2.1"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal" />
 
-            <EditText
-                android:layout_width="230dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Your Name"
                 android:id="@+id/tourist_request_name"
-                android:hint="Your name"
-                android:textSize="14dp"
-                android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_weight="4"
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
         <LinearLayout
@@ -107,7 +109,7 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tourist_request_date"
-                android:hint="Your birthdate"
+                android:hint="Check in Date"
                 android:textSize="14dp"
                 android:maxLines="1"
                 android:layout_gravity="right" />
@@ -138,7 +140,9 @@
                 android:hint="Night stay"
                 android:textSize="14dp"
                 android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:numeric="integer"
+                android:inputType="number" />
 
         </LinearLayout>
         <LinearLayout
@@ -194,7 +198,9 @@
                 android:hint="Number rent"
                 android:textSize="14dp"
                 android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:inputType="number"
+                android:numeric="integer" />
 
         </LinearLayout>
         <LinearLayout
@@ -222,7 +228,9 @@
                 android:hint="Total guest"
                 android:textSize="14dp"
                 android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:inputType="number"
+                android:numeric="integer" />
 
         </LinearLayout>
         <LinearLayout
@@ -275,10 +283,12 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tourist_request_budget"
-                android:hint="Your budget"
+                android:hint="Your budget (Rp)"
                 android:textSize="14dp"
                 android:maxLines="1"
-                android:layout_gravity="right" />
+                android:layout_gravity="right"
+                android:inputType="number"
+                android:numeric="integer" />
 
         </LinearLayout>
 
@@ -301,15 +311,6 @@
                 android:layout_weight="1"
                 android:layout_marginRight="2dp" />
 
-            <Button
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="Cancel"
-                android:id="@+id/tourist_request_cancel_button"
-                android:background="@color/main_color"
-                android:textColor="#FFFFFF"
-                android:layout_weight="1"
-                android:layout_marginLeft="2dp" />
         </LinearLayout>
 
     </LinearLayout>
