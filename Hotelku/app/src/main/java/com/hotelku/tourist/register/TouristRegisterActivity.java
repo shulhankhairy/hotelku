@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.hotelku.RoundImage;
@@ -50,7 +51,7 @@ public class TouristRegisterActivity extends Activity {
 
     Button touristRegisterProfPicBtn;
     EditText touristRegisterName;
-    EditText touristRegisterGender;
+    Spinner touristRegisterGender;
     EditText touristRegisterPhone;
     EditText touristRegisterEmail;
     EditText touristRegisterPassword;
@@ -116,14 +117,14 @@ public class TouristRegisterActivity extends Activity {
             }
         });*/
 
-        touristRegisterGender = (EditText)findViewById(R.id.tourist_register_genderspinner);
+        touristRegisterGender = (Spinner)findViewById(R.id.tourist_register_genderspinner);
         touristRegisterPhone = (EditText)findViewById(R.id.tourist_register_phone);
         touristRegisterEmail = (EditText)findViewById(R.id.tourist_register_email);
         touristRegisterPassword = (EditText)findViewById(R.id.tourist_register_password);
 
         touristName = touristRegisterName.getText().toString();
         touristBitrhday = touristRegisterBirthday.getText().toString();
-        touristGender = touristRegisterGender.getText().toString();
+        touristGender = touristRegisterGender.getOnItemClickListener().toString();
         touristPhone = touristRegisterPhone.getText().toString();
         touristEmail = touristRegisterEmail.getText().toString();
         touristPassword = touristRegisterPassword.getText().toString();
@@ -289,7 +290,7 @@ public class TouristRegisterActivity extends Activity {
                 HttpClient httpclient = new DefaultHttpClient();
                 HttpPost httppost = new
                         //  Here you need to put your server file address
-                        HttpPost("http://www.trikaryateknologi.com/hotelku/webservice/turis_insert_data_register.php");
+                        HttpPost("http://www.trikaryateknologi.com/hotelku/webservice/tourist_insert_data_register.php");
                 httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                 HttpResponse response = httpclient.execute(httppost);
                 HttpEntity entity = response.getEntity();

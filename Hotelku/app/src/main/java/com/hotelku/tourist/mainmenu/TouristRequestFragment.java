@@ -46,6 +46,8 @@ public class TouristRequestFragment extends Fragment {
     String requestTmbh;
     String budget;
 
+    String username;
+
     TextView touristReqName;
     EditText touristReqDest;
     EditText touristReqCheckInDate;
@@ -74,6 +76,9 @@ public class TouristRequestFragment extends Fragment {
         touristReqTotalGuest = (EditText)rootView.findViewById(R.id.tourist_request_guest);
         touristReqAdd = (EditText)rootView.findViewById(R.id.tourist_request_detail);
         touristReqBudget = (EditText)rootView.findViewById(R.id.tourist_request_budget);
+
+        username = getArguments().getString("username");
+        touristReqName.setText(username);
 
         destinasi = touristReqDest.getText().toString();
         nama = touristReqName.getText().toString();

@@ -22,18 +22,19 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView13"
+                android:id="@+id/tourist_edit_pict"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_user" />
 
             <Button
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
                 android:text="Change Profile Picture"
-                android:id="@+id/button"
+                android:id="@+id/tourist_edit_pict_button"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/main_color"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -140,7 +141,7 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Password"
                     android:id="@+id/textView81"
-                    android:layout_weight="1" />
+                    android:layout_weight="0.45" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -149,7 +150,7 @@
                     android:id="@+id/tourist_edit_password"
                     android:hint="Your password"
                     android:textSize="14dp"
-                    android:layout_weight="1.40"
+                    android:layout_weight="1"
                     android:inputType="textPassword" />
             </LinearLayout>
         </LinearLayout>
